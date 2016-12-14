@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Usable form</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css' integrity='sha256-t2/7smZfgrST4FS1DT0bs/KotCM74XlcqZN5Vu7xlrw=' crossorigin='anonymous' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha256-rByPlHULObEjJ6XQxW/flG2r+22R5dKiAoef+aXWfik=" crossorigin="anonymous" />
+  <link rel='stylesheet' href='./style.css' />
+  <script src='https://code.jquery.com/jquery-3.1.1.min.js' integrity='sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=' crossorigin='anonymous'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js' integrity='sha256-+4KHeBj6I8jAKAU8xXRMXXlH+sqCvVCoK5GAFkmb+2I=' crossorigin='anonymous'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script>
+  <script src='./script.js'></script>
+</head>
+<body>
+  <div id='usableForm'>
+    <form data-form>
+      <h1 class='g-form-h1'>
+        <b>Зарегистрируйтесь</b> и начните продавать услуги через интернет сегодня
+      </h1>
+
+      <fieldset class='g-form-block g-form-fullname'>
+        <label class='g-form-label'>
+          ИМЯ
+          <br>
+          <input type='text' name='name' class='g-form-input'>
+        </label>
+        <label class='g-form-label'>
+          ФАМИЛИЯ
+          <br>
+          <input type='text' name='surname' class='g-form-input'>
+        </label>
+      </fieldset>
+
+      <div class='g-form-block '>
+        <label class='g-form-label'>
+          ПРОФЕССИЯ
+          <br>
+          <input type='text' name='profession' data-profession class='g-form-input g-form-surname'>
+        </label>
+      </div>
+
+      <fieldset class='g-form-block g-form-fullphone'>
+        <label for='usableFormPhone' class='g-form-label'>
+          ТЕЛЕФОН
+        </label>
+        <br>
+        <select data-flag class='g-flag-select'>
+          <option value='ru'>RU</option>
+          <option value='us'>US</option>
+          <option value='gb'>GB</option>
+          <option value='fr'>FR</option>
+        </select>
+        <input type='text' name='phone' id='usableFormPhone' data-phone class='g-form-input g-form-phone'>
+      </fieldset>
+
+      <footer class='g-form-buttons'>
+        <input type='submit' value='Зарегистрироваться' class='g-form-submit'>
+      </footer>
+    </form>
+  </div>
+</body>
+</html>

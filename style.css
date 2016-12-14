@@ -1,0 +1,177 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+select.g-flag-select[data-flag] + span {
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 10px;
+}
+select.g-flag-select[data-flag=ru] + span {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg');
+}
+select.g-flag-select[data-flag=us] + span {
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg');
+}
+select.g-flag-select[data-flag=gb] + span {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom.svg');
+}
+select.g-flag-select[data-flag=fr] + span {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg');
+}
+
+.g-flag-selectmenu > ul > li:nth-child(1) > div,
+.g-flag-selectmenu > ul > li:nth-child(2) > div,
+.g-flag-selectmenu > ul > li:nth-child(3) > div,
+.g-flag-selectmenu > ul > li:nth-child(4) > div {
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 10px;
+  padding-left: 40px;
+  font-size: 14px;
+  margin-right: -5px;
+}
+.g-flag-selectmenu > ul > li:nth-child(1) > div { /* ru */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg');
+}
+.g-flag-selectmenu > ul > li:nth-child(2) > div { /* us */
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg');
+}
+.g-flag-selectmenu > ul > li:nth-child(3) > div { /* gb */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom.svg');
+}
+.g-flag-selectmenu > ul > li:nth-child(4) > div { /* fr */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg');
+}
+
+#usableForm {
+  font-family: Arial, 'Helvetica CY', 'Nimbus Sans L', sans-serif;
+  margin: 0 auto;
+  width: 402px;
+  padding: 15px;
+  color: #4a4a4a;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.g-form-label {
+  color: #9c9c9c;
+  font-size: 14px;
+}
+
+.g-form-input {
+  font-family: Arial, 'Helvetica CY', 'Nimbus Sans L', sans-serif;
+  color: #4a4a4a;
+  border: 1px solid #c8c8c8;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 12px 15px;
+  height: 44px;
+  font-size: 16px;
+  margin: 10px 0;
+}
+.g-form-input:focus {
+  border-color: #0880fd;
+  z-index: 1;
+  position: relative;
+  outline: none;
+}
+
+.g-form-h1 {
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.g-form-fullname {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.g-form-fullname label {
+  width: 50%;
+  float: left;
+}
+.g-form-fullname label:first-child {
+  padding-right: 5px;
+}
+.g-form-fullname label:last-child {
+  padding-left: 5px;
+}
+.g-form-fullname input {
+  width: 100%;
+}
+
+.g-form-surname {
+  width: 100%;
+}
+
+.g-form-fullphone {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.g-flag-select,
+.g-flag-selectmenu-button {
+  width: 75px;
+  height: 44px;
+  float: left;
+  margin-right: 0;
+  border-radius: 5px 0 0 5px;
+  margin: 10px 0;
+  border: 1px solid #c8c8c8;
+  background-color: #f9f9f9;
+}
+.g-flag-selectmenu-button:focus {
+  border-color: #0880fd;
+  outline: none;
+}
+.g-flag-selectmenu-button:hover {
+}
+.g-flag-selectmenu-button .ui-selectmenu-icon {
+  margin-top: 8px;
+  margin-right: -8px;
+}
+.g-flag-selectmenu-button .ui-selectmenu-text {
+  visibility: hidden;
+}
+.g-form-phone {
+  border-radius: 0 5px 5px 0;
+  width: 298px;
+  margin-left: -1px;
+}
+
+.g-form-buttons {
+  text-align: center;
+  margin-top: 33px;
+}
+
+.g-form-submit {
+  font-family: Arial, 'Helvetica CY', 'Nimbus Sans L', sans-serif;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  background-color: #0880fd;
+  border-radius: 5px;
+  border: 0;
+  padding: 14px 20px;
+  height: 44px;
+  font-size: 16px;
+}
+.g-form-submit:active {
+  top: 1px;
+  left: 1px;
+}
+.g-form-submit:focus,
+.g-form-submit:hover {
+  background-color: #076dd6;
+}
+
+.g-form-block {
+  margin: 15px 0;
+}

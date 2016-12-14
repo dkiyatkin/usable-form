@@ -1,0 +1,9 @@
+extends:
+  - standard
+rules:
+  comma-dangle: 0
+env:
+  node: false
+  browser: true
+globals:
+  jQuery: true
